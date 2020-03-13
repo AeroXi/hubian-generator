@@ -57,11 +57,11 @@
                                 生成
                             </span>
                         </p>
-                        <!-- <p class="card-footer-item">
+                        <p class="card-footer-item" :data-clipboard-text="paragraph" id="copy">
                 <span>
                   复制
                 </span>
-              </p> -->
+            </p>
                     </footer>
                 </div>
                 <br>
@@ -80,6 +80,10 @@
     <!-- 生产环境版本，优化了尺寸和速度 -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('#copy');
+    </script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
