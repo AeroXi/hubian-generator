@@ -15,7 +15,54 @@
 
 <body>
     <div id="app" v-cloak>
-        {{ paragraph }}
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="box">
+                <div class="field">
+                    <label class="label">评论的事件</label>
+                    <div class="control">
+                      <input class="input" type="text" v-model="event">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">作者自称</label>
+                    <div class="control">
+                      <input class="input" type="text" v-model="author">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">长度</label>
+                    <div class="control">
+                      <input class="input" type="text" v-model="length">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="card">
+            <div class="card-content">
+              {{ paragraph }}
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item" @click="generate">
+                <span>
+                  重新生成
+                </span>
+              </p>
+              <p class="card-footer-item">
+                <span>
+                  复制
+                </span>
+              </p>
+            </footer>
+          </div>
+            </div>
+        </div>
+
+        
 
       </div>
     <script src="./hu.js"></script>

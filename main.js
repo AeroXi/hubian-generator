@@ -1,13 +1,18 @@
 var app = new Vue({
     el: '#app',
     data: {
-      length: 10
+      length: 10,
+      event: "",
+      author: "老胡",
     },
     methods: {
         sentence() {
             text = hu.text
             return text[Math.floor(Math.random() * text.length)]
         },
+        generate(){
+            return
+        }
     },
     computed: {
     
