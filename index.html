@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>胡编生成器</title>
+    <title>胡编生成器 ihubian.xyz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <style>
         [v-cloak] {
@@ -43,20 +43,25 @@
         <div class="columns is-centered">
             <div class="column is-half">
                 <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                          胡编生成器 ihubian.xyz
+                        </p>
+                      </header>
             <div class="card-content">
               {{ paragraph }}
             </div>
             <footer class="card-footer">
               <p class="card-footer-item" @click="generate">
                 <span>
-                  重新生成
+                  生成
                 </span>
               </p>
-              <p class="card-footer-item">
+              <!-- <p class="card-footer-item">
                 <span>
                   复制
                 </span>
-              </p>
+              </p> -->
             </footer>
           </div>
             </div>
