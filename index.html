@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <style>
         [v-cloak] {
-  display: none;
-}
+            display: none;
+        }
     </style>
 </head>
 
@@ -18,64 +18,70 @@
         <div class="columns is-centered">
             <div class="column is-half">
                 <div class="box">
-                <div class="field">
-                    <label class="label">评论的事件</label>
-                    <div class="control">
-                      <input class="input" type="text" v-model="event">
+                    <div class="field">
+                        <label class="label">评论的事件</label>
+                        <div class="control">
+                            <input class="input" type="text" v-model="event">
+                        </div>
                     </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">作者自称</label>
-                    <div class="control">
-                      <input class="input" type="text" v-model="author">
+                    <div class="field">
+                        <label class="label">作者自称</label>
+                        <div class="control">
+                            <input class="input" type="text" v-model="author">
+                        </div>
                     </div>
-                  </div>
-                  <div class="field">
-                    <label class="label">长度</label>
-                    <div class="control">
-                      <input class="input" type="text" v-model="length">
+                    <div class="field">
+                        <label class="label">长度</label>
+                        <div class="control">
+                            <input class="input" type="text" v-model="length">
+                        </div>
                     </div>
-                  </div>
                 </div>
             </div>
-        
+
         </div>
         <div class="columns is-centered">
             <div class="column is-half">
                 <div class="card">
                     <header class="card-header">
                         <p class="card-header-title">
-                          胡编生成器 ihubian.xyz
+                            胡编生成器 ihubian.xyz
                         </p>
-                      </header>
-            <div class="card-content">
-              {{ paragraph }}
-            </div>
-            <footer class="card-footer">
-              <p class="card-footer-item" @click="generate">
-                <span>
-                  生成
-                </span>
-              </p>
-              <!-- <p class="card-footer-item">
+                    </header>
+                    <div class="card-content">
+                        {{ paragraph }}
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item" @click="generate">
+                            <span>
+                                生成
+                            </span>
+                        </p>
+                        <!-- <p class="card-footer-item">
                 <span>
                   复制
                 </span>
               </p> -->
-            </footer>
-          </div>
+                    </footer>
+                </div>
+                <br>
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/AeroXi/hubian-generator" data-size="large"
+                    data-show-count="true" aria-label="Star AeroXi/hubian-generator on GitHub">Star</a>
             </div>
         </div>
 
-        
 
-      </div>
+
+    </div>
     <script src="./hu.js"></script>
     <!-- 开发环境版本，包含了有帮助的命令行警告 -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <!-- 生产环境版本，优化了尺寸和速度 -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./main.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>
