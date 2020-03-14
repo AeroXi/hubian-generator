@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
       length: 10,
       event: "",
-      author: "老胡",
+      author: "老李",
       paragraph: "",
     },
     methods: {
